@@ -1,5 +1,9 @@
 (ns bob)
+(require '[clojure.string :as str])
 
-(defn response-for [] ;; <- arglist goes here
-  ;; your code goes here
-)
+(defn response-for [text]
+  (cond
+    (= (str/upper-case text) text) "Whoa, chill out!"
+    (= (last text) \?) "Sure."
+    (= (last text) nil) "Fine. Be that way!"
+    :else "Whatever."))

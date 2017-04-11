@@ -1,0 +1,25 @@
+(last "")
+(= (last "String") g)
+(= (last "String") "g")
+(= (last "String") "/g")
+(= (last "String") "\g")
+(last "String)
+"
+)
+(last "String")
+\g
+/g
+(= (last "String") \g)
+\?
+(= (capitalize "STRING") "STRING")
+string/capitalize
+(require 'clojure.string')
+(require 'clojure.string)
+string/capitalize
+clojure.string/capitalize
+(= (clojure.string/capitalize "STRING") "STRING)
+"
+)
+(= (clojure.string/capitalize "STRING") "STRING")
+(clojure.string/capitalize "STRING")
+(= (clojure.string/upper-case "STRING") "STRING")
