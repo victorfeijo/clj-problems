@@ -6,6 +6,8 @@
   (and (= (str/upper-case text) text)
        (nil? (re-matches #"[0-9]*$" text))))
 
+(defn is-letter? )
+
 (defn is-question? [text] (= (last text) \?))
 
 (defn is-blank? [text] (some? (re-matches #"\s*$" text)))
