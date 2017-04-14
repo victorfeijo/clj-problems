@@ -1,1 +1,1 @@
-{"bob-test" ["responds-to-silence" "responds-to-prolonged-silence" "responds-to-number-question" "responds-to-only-numbers"]}
+{"bob-test" ["responds-to-prolonged-silence" "responds-to-forceful-questions" "responds-to-questions" "responds-to-number-question" "responds-to-only-numbers"]}
