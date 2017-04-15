@@ -1,12 +1,14 @@
 (ns bob)
 (require '[clojure.string :as str])
 
+(defn has-letter?
+  [text]
+  (some? (re-matches #".*([A-Z]|[a-z])+.*$" text)))
+
 (defn is-shout?
   [text]
   (and (= (str/upper-case text) text)
-       (nil? (re-matches #"[0-9]*$" text))))
-
-(defn is-letter? )
+       (has-letter? text)))
 
 (defn is-question? [text] (= (last text) \?))
 
@@ -14,7 +16,7 @@
 
 (defn response-for [text]
   (cond
-    (is-question? text) "Sure."
     (is-shout? text) "Whoa, chill out!"
+    (is-question? text) "Sure."
     (is-blank? text) "Fine. Be that way!"
     :else "Whatever."))

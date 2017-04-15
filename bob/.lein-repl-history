@@ -52,3 +52,16 @@ clojure.string/capitalize
 (re-matches #"[0-9]*$" "123das")
 (re-matches #"[0-9]*$" "asda123")
 (re-matches #"\a*$" "asda123")
+(:require bob)
+(load-file "bob.clj")
+(load-file "./bob.clj")
+(load-file "bob.clj")
+(load-file "src/bob.clj")
+response-for
+bob/response-for
+bob/is-blank?
+(bob/is-question? "1, 2, 3 GO!")
+(bob/is-shout? "1, 2, 3 GO!")
+(bob/is-question? "1, 2, 3 GO?")
+(load-file "src/bob.clj")
+(bob/response-for "WHAT THE HELL WERE YOU THINKING?")
